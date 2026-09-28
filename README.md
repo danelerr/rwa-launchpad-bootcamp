@@ -1,3 +1,7 @@
+> **Entrega semana 4 (Daniel Cueto):** mínimo de inversión de 500, tests y
+> evidencia de Testnet en [dia-3/README.md](dia-3/README.md) y
+> [dia-3/ENTREGA.md](dia-3/ENTREGA.md).
+
 # RWA Launchpad Bolivia Stellar Soroban Bootcamp
 
 Hands-on starter repository for the Oppia Education Bolivia bootcamp. Over three days every team builds the **same RWA Launchpad** smart contract, adding one SEP layer per day. Admin operations (mint, whitelist, withdraw, pause) and user operations (invest, balance, transfer) are kept distinct on purpose — that split carries through to deploy scripts on Día 3.

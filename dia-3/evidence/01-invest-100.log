@@ -1,0 +1,15 @@
+=== Stellar Elite Bolivia / Semana 4 ===
+Network: testnet
+Contract: CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z
+Investor: GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL
+RWA balance before: 0
+=== INVEST 100: expected AmountTooLow (Contract #7) ===
+❌ error: transaction simulation failed: HostError: Error(Contract, #7)
+
+Event log (newest first):
+   0: [Diagnostic Event] contract:CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z, topics:[error, Error(Contract, #7)], data:"escalating error to VM trap from failed host function call: fail_with_error"
+   1: [Diagnostic Event] contract:CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z, topics:[error, Error(Contract, #7)], data:["failing with contract error", 7]
+   2: [Diagnostic Event] topics:[fn_call, CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z, invest], data:[GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL, 100]
+PASS: 100 rejected by AmountTooLow; CLI exit status 1
+The CLI rejects this during simulation; no failed transaction is submitted.
+RWA balance after rejection: 0 (unchanged)

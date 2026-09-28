@@ -1,0 +1,18 @@
+{
+  "network": "testnet",
+  "contract_id": "CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z",
+  "payment_token": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
+  "admin": "GDB2T2CNW6CIJVAFVR2TZYOSRVGEPF35ZN7D64HJ5VEVALPIGBWEEUGN",
+  "investor": "GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL",
+  "transaction_hash": "c4b2cc0a71b6574dcfa6af85da1818839626a7200098df29d055ce98f5dfec3e",
+  "status": "SUCCESS",
+  "ledger": 4916944,
+  "payment_amount": 500,
+  "minted_rwa": 5,
+  "final_rwa_balance": 5,
+  "failed_amount": 100,
+  "error": "AmountTooLow",
+  "error_code": 7,
+  "failure_stage": "simulation",
+  "wasm_sha256": "6b8fea5729c604af7673f1727cecbe7d3e4a6329dde363dfaefe9eeeb90ae1bf"
+}

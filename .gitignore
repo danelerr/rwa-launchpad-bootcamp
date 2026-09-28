@@ -2,3 +2,11 @@
 **/target
 Cargo.lock
 .DS_Store
+
+# Local configuration and generated snapshots
+.env
+.env.local
+.stellar/
+**/test_snapshots/
+# Pin the dependency resolution used for the submitted contract.
+!dia-3/Cargo.lock

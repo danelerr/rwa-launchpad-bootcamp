@@ -1,0 +1,17 @@
+=== Stellar Elite Bolivia / Semana 4 ===
+Network: testnet
+Contract: CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z
+Investor: GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL
+RWA balance before: 0
+=== INVEST 500: expected success ===
+ℹ️  Simulating transaction…
+ℹ️  Signing transaction: c4b2cc0a71b6574dcfa6af85da1818839626a7200098df29d055ce98f5dfec3e
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/c4b2cc0a71b6574dcfa6af85da1818839626a7200098df29d055ce98f5dfec3e
+📅 CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC - Success - Event: [{"symbol":"transfer"},{"address":"GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL"},{"address":"CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z"},{"string":"native"}] = {"i128":"500"}
+📅 CBT75AY5COBHQGV7VWZFWZTMD5M4FDMIJ2BEDVNAEY2KLFOUIEEORQ5Z - Success - Event: [{"symbol":"invest"}] = {"vec":[{"address":"GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL"},{"i128":"500"},{"i128":"5"}]}
+RWA minted: 5
+=== BALANCE ===
+RWA balance after successful investment: 5
+PASS: 100 rejected / 500 accepted / balance increased by 5 RWA

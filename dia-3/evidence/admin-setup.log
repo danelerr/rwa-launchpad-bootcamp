@@ -1,0 +1,14 @@
+=== ADMIN: initialize ===
+ℹ️  Simulating transaction…
+ℹ️  Signing transaction: 8ee2703c31811c215f38b2f3aed24c559c682a50dc9fdc236244642e6c7f9949
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/8ee2703c31811c215f38b2f3aed24c559c682a50dc9fdc236244642e6c7f9949
+
+=== ADMIN: whitelist investor GAI5M4SMDMQD3X6WFHNPSP2YUAFO5BSLOAQOQXWBIDPUT3SSRMBILZTL ===
+ℹ️  Simulating transaction…
+ℹ️  Signing transaction: bf0e027c1906f9a92869fddfeaca4030bf6abbafabaeb72764664694b4a86329
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/bf0e027c1906f9a92869fddfeaca4030bf6abbafabaeb72764664694b4a86329
+

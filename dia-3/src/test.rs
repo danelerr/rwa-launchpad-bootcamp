@@ -30,9 +30,9 @@ fn setup_with_payment_token(env: &Env) -> (Address, Address, Address, RwaLaunchp
 }
 
 #[test]
-fn test_invest() {
+fn test_minimum_investment_100_fails_and_500_succeeds() {
     let env = Env::default();
-    let (admin, payment_token, _contract_id, client) = setup_with_payment_token(&env);
+    let (admin, payment_token, contract_id, client) = setup_with_payment_token(&env);
     let investor = Address::generate(&env);
 
     let token_admin = StellarAssetClient::new(&env, &payment_token);
@@ -42,10 +42,33 @@ fn test_invest() {
     env.mock_all_auths();
     client.set_whitelist(&admin, &investor, &true);
 
+    assert_eq!(
+        client.try_invest(&investor, &100),
+        Err(Ok(Error::AmountTooLow.into()))
+    );
+    assert_eq!(client.balance(&investor), 0);
+    assert_eq!(token.balance(&investor), 1_000);
+    assert_eq!(token.balance(&contract_id), 0);
+
+    // The boundary is inclusive: 499 is rejected and exactly 500 is accepted.
+    assert_eq!(
+        client.try_invest(&investor, &499),
+        Err(Ok(Error::AmountTooLow.into()))
+    );
     let minted = client.invest(&investor, &500);
     assert_eq!(minted, 5);
     assert_eq!(client.balance(&investor), 5);
     assert_eq!(token.balance(&investor), 500);
+    assert_eq!(token.balance(&contract_id), 500);
+
+    // A prior successful investment does not exempt a later small investment.
+    assert_eq!(
+        client.try_invest(&investor, &100),
+        Err(Ok(Error::AmountTooLow.into()))
+    );
+    assert_eq!(client.balance(&investor), 5);
+    assert_eq!(token.balance(&investor), 500);
+    assert_eq!(token.balance(&contract_id), 500);
 }
 
 #[test]
